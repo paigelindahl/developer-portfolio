@@ -1,0 +1,30 @@
+.navigation {
+  font-family: 'PT Mono', monospace;
+  position: sticky;
+  .nav-link {
+    color: white;
+    position: relative;
+    padding: 1rem 1.5rem;
+    &:hover {
+      color: rgb(245, 245, 245);
+
+      &::after {
+          width: 80%;
+      }
+  }
+    &::after {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-color: white;
+      color: transparent;
+      width: 0%;
+      content: ".";
+      height: 2px;
+      transition: all 0.5s;
+  }
+
+    }
+}
