@@ -1,11 +1,8 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import styled from 'styled-components';
 import '../styles/Nav.scss'
 
 export default function Navigate(props) {
-
-
 
 
   return (

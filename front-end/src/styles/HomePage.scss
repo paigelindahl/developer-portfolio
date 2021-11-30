@@ -1,0 +1,41 @@
+.home-text {
+  color: white;
+  h5 {
+    font-family: 'PT Mono', monospace;
+  }
+
+
+
+  //SPLIT TEXT
+
+
+span span {
+  position: relative;
+  animation: move-text-color 0.75s forwards;
+  bottom: -1em;
+  opacity: 0;
+  font-family: 'Montserrat', sans-serif;
+    //font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+  font-size: calc(40px + (70 - 40) * ((100vw - 300px) / (1600 - 300)) );
+  font-weight: 700;
+}
+
+@keyframes move-text-color {
+  
+  50% {
+    bottom: 0.2em;
+    color: #4F9493;
+  }
+
+  75% {
+    bottom: 0.1em;
+    color: #00CED1;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+    color: white;
+  }
+}
+}
