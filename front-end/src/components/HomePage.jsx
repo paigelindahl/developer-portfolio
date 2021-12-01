@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import '../styles/HomePage.scss';
+import Button from './Button';
 
 function SplitText(props) {
 
@@ -22,6 +23,7 @@ function SplitText(props) {
         <span aria-label={props.secondText} role={props.role} className="split-text">
           {props.secondText.split("").map(function (char, index) {
             let style = { "animationDelay": (index / 10) + "s" }
+
             return <span
               aria-hidden="true"
               key={index}
@@ -44,6 +46,7 @@ export default function Homepage(props) {
         <Container className="mt-5 pt-5">
           <h5>Hi! My name is</h5>
           <SplitText firstText="Paige Lindahl," secondText="Web developer."></SplitText>
+          <Button text="About me"></Button>
         </Container>
       </Container>
     </>
