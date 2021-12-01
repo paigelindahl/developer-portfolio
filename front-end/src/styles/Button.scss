@@ -1,17 +1,12 @@
 .btn {
   margin-top: 50px;
   margin-bottom: 50px;
-  // line-height: 50px;
-  // height: 50px;
-  // text-align: center;
   width: 250px;
-  // cursor: pointer;
   padding: 0.75rem !important;
   
 }
 
 .btn-one {
-  // transition: all 0.3s;
   position: relative;
 }
 .btn-one span {
@@ -20,6 +15,8 @@
   text-transform: uppercase;
   font-family: "Montserrat";
   color: white;
+  position: relative;
+  z-index: 100;
 }
 .btn-one::before {
   content: '';
@@ -35,8 +32,8 @@
   border-bottom-width: 3px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: rgba(79,148,147,0.7);
-  border-bottom-color:rgba(79,148,147,0.7);
+  border-top-color: rgba(0, 206, 209, 0.7);
+  border-bottom-color: rgba(0, 206, 209, 0.7);
   transform: scale(0.1, 1);
   border-radius: 50px;
   
@@ -57,7 +54,7 @@
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(0, 206, 209, 0.3);
 }
 .btn-one:hover::after {
   opacity: 0; 

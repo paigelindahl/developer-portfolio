@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import '../styles/HomePage.scss';
 import Button from './Button';
 
@@ -42,12 +44,14 @@ export default function Homepage(props) {
 
   return (
     <>
-      <Container className="home-text mt-5 p-5" >
-        <Container className="mt-5 pt-5">
-          <h5>Hi! My name is</h5>
-          <SplitText firstText="Paige Lindahl," secondText="Web developer."></SplitText>
-          <Button text="About me"></Button>
-        </Container>
+      <Container className="home-text d-flex align-items-center" >
+        <Row>
+          <Col>
+            <h5>Hi! My name is</h5>
+            <SplitText firstText="Paige Lindahl," secondText="Web developer."></SplitText>
+            <Button text="About me"></Button>
+          </Col>
+        </Row>
       </Container>
     </>
   )

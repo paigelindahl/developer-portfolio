@@ -1,6 +1,8 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import '../styles/Nav.scss'
+import '../styles/Nav.scss';
+
+
 
 export default function Navigate(props) {
 

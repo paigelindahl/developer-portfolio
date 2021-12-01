@@ -1,7 +1,8 @@
-// import logo from './logo.svg';
 import './App.css';
 import Navigate from './components/Navigate';
 import HomePage from './components/HomePage';
+import About from './components/About';
+
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Navigate></Navigate>
       <HomePage></HomePage>
+      <About></About>
 
     </div>
   );

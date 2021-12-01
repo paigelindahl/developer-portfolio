@@ -1,0 +1,13 @@
+.about-container {
+  color: white;
+  font-family: Montserrat;
+  // margin-top: 50px;
+  h1 {
+  &.title {
+    color: #e8e8e8;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)) );;
+  }
+}
+}
