@@ -1,16 +1,23 @@
 import './App.css';
+import React, { useRef, useEffect } from "react";
 import Navigate from './components/Navigate';
 import HomePage from './components/HomePage';
 import About from './components/About';
+import Projects from './components/Projects';
 
 
+// const useMountEffect = fun => useEffect(fun, []);
 
 function App() {
+  const myRef = useRef(null);
+  const executeScroll = () => myRef.current.scrollIntoView();
+  // useMountEffect(executeScroll);
   return (
     <div className="App">
-      <Navigate></Navigate>
-      <HomePage></HomePage>
-      <About></About>
+      <Navigate executeScroll={executeScroll}></Navigate>
+      <HomePage executeScroll={executeScroll}></HomePage>
+      <About myRef={myRef} ></About>
+      <Projects ></Projects>
 
     </div>
   );

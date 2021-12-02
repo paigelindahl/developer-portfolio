@@ -7,6 +7,7 @@ import '../styles/Nav.scss';
 export default function Navigate(props) {
 
 
+
   return (
     <>
       <Nav className="justify-content-end navigation" activeKey="/home">
@@ -14,7 +15,7 @@ export default function Navigate(props) {
           <Nav.Link className="nav-link" href="/home">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link className="nav-link" eventKey="link-1">About</Nav.Link>
+          <Nav.Link className="nav-link" eventKey="link-1" onClick={props.executeScroll}>About</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link className="nav-link" eventKey="link-2">Projects</Nav.Link>
