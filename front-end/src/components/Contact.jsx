@@ -14,9 +14,14 @@ export default function Contact(props) {
         <Container className="contact-container">
           <Row>
             <Col className="col-11 max-auto">
-              <div>
+              <div className="mb-5">
                 <h1 className="title"><span className="underline--magical">Contact</span></h1>
               </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="col-11">
+
             </Col>
           </Row>
         </Container>
