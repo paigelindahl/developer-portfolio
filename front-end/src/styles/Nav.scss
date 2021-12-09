@@ -1,6 +1,13 @@
 .navigation {
   font-family: 'PT Mono', monospace;
-  position: sticky;
+  width: 100%;
+ 
+  &.fixed {
+      position: fixed;
+      z-index: 1000;
+      background-color: #002731 !important;
+    }
+
   .nav-link {
     color: white;
     position: relative;

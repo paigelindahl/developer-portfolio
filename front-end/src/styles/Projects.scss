@@ -1,6 +1,15 @@
 .project-container {
-  margin-top: 200px;
+  margin-top: 150px;
   text-align: end;
   color: white;
   font-family: Montserrat;
+
+  .each-project {
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+    padding: 3rem 3rem 2rem;
+    text-align: left;
+    
+  }
 }

@@ -4,6 +4,7 @@ import Navigate from './components/Navigate';
 import HomePage from './components/HomePage';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 
 // const useMountEffect = fun => useEffect(fun, []);
@@ -18,6 +19,7 @@ function App() {
       <HomePage executeScroll={executeScroll}></HomePage>
       <About myRef={myRef} ></About>
       <Projects ></Projects>
+      <Contact />
 
     </div>
   );
