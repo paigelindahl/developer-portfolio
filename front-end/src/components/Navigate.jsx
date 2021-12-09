@@ -13,16 +13,29 @@ export default function Navigate(props) {
       <Nav className="navigation justify-content-end fixed" activeKey="/home">
         <div className="d-flex">
           <Nav.Item>
-            <Nav.Link className="nav-link" href="/home">Home</Nav.Link>
+            <Nav.Link className="nav-link" href="/">Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" eventKey="link-1" onClick={props.executeScroll}>About</Nav.Link>
+            <Nav.Link className="nav-link" eventKey="link-1" onClick={e => {
+
+              let scrollLocation = document.getElementById('about');
+              e.preventDefault();
+              scrollLocation && scrollLocation.scrollIntoView();
+            }}>About</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" eventKey="link-2">Projects</Nav.Link>
+            <Nav.Link className="nav-link" eventKey="link-2" onClick={e => {
+              let scrollLocation = document.getElementById('projects');
+              e.preventDefault();
+              scrollLocation && scrollLocation.scrollIntoView();
+            }}>Projects</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link" eventKey="link-3">
+            <Nav.Link className="nav-link" eventKey="link-3" onClick={e => {
+              let scrollLocation = document.getElementById('contact');
+              e.preventDefault();
+              scrollLocation && scrollLocation.scrollIntoView();
+            }}>
               Contact
             </Nav.Link>
           </Nav.Item>

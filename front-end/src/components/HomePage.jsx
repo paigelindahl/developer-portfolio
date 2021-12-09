@@ -49,10 +49,11 @@ export default function Homepage(props) {
           <Col>
             <h5>Hi! My name is</h5>
             <SplitText firstText="Paige Lindahl," secondText="Web developer."></SplitText>
-            <Button text="About me" executeScroll={props.executeScroll}></Button>
+            <Button text="About me" name="about"></Button>
           </Col>
         </Row>
       </Container>
+      <div id="about"></div>
     </>
   )
 }

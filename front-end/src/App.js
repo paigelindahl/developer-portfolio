@@ -10,14 +10,20 @@ import Contact from './components/Contact';
 // const useMountEffect = fun => useEffect(fun, []);
 
 function App() {
-  const myRef = useRef(null);
-  const executeScroll = () => myRef.current.scrollIntoView();
+  // const myRef = useRef(null);
+
+  // const executeScroll = () => {
+  //   myRef.current.scrollIntoView();
+  //   console.log('my ref current', myRef.current)
+  // }
+
+
   // useMountEffect(executeScroll);
   return (
     <div className="App">
-      <Navigate executeScroll={executeScroll}></Navigate>
-      <HomePage executeScroll={executeScroll}></HomePage>
-      <About myRef={myRef} ></About>
+      <Navigate></Navigate>
+      <HomePage></HomePage>
+      <About ></About>
       <Projects ></Projects>
       <Contact />
 

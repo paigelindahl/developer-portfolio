@@ -11,11 +11,11 @@ import '../styles/General.scss';
 export default function About(props) {
 
 
-
   return (
     <>
       <Fade up duration={2000} >
-        <Container className="about-container" ref={props.myRef} >
+        <Container className="about-container" >
+
           <div className="border">
             <Row>
               <Col className="col-11 mx-auto">
@@ -47,13 +47,14 @@ export default function About(props) {
             <Row >
               <Col className=" mx-auto">
                 <div className="center-col mt-5">
-                  <Button text="View my Projects" />
+                  <Button text="View my Projects" name="projects" />
                 </div>
               </Col>
             </Row>
           </div>
-        </Container>
+        </Container >
       </Fade>
+      <div id='projects'></div>
 
 
 

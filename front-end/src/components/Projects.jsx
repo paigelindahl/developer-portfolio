@@ -11,7 +11,7 @@ export default function Projects(props) {
 
   return (
     <>
-      <Container className="project-container">
+      <Container className="project-container" >
         <Fade up duration={2000}>
           <Row>
             <Col className="col-12">
@@ -47,6 +47,7 @@ export default function Projects(props) {
           </Row>
         </Fade>
       </Container>
+      <div id="contact"></div>
 
 
     </>
