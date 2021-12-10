@@ -13,7 +13,12 @@ export default function Navigate(props) {
       <Nav className="navigation justify-content-end fixed" activeKey="/home">
         <div className="d-flex">
           <Nav.Item>
-            <Nav.Link className="nav-link" href="/">Home</Nav.Link>
+            <Nav.Link className="nav-link" href="/" onClick={e => {
+
+              let scrollLocation = document.getElementById('home');
+              e.preventDefault();
+              scrollLocation && scrollLocation.scrollIntoView();
+            }}>Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link className="nav-link" eventKey="link-1" onClick={e => {

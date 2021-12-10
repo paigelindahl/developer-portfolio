@@ -44,7 +44,7 @@ export default function Homepage(props) {
 
   return (
     <>
-      <Container className="home-text d-flex align-items-center" >
+      <Container className="home-text d-flex align-items-center" id="home" >
         <Row>
           <Col>
             <h5>Hi! My name is</h5>

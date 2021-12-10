@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Fade from 'react-reveal/Fade';
 import '../styles/Contact.scss';
+import ContactForm from './ContactForm';
 
 export default function Contact(props) {
 
@@ -20,7 +21,8 @@ export default function Contact(props) {
             </Col>
           </Row>
           <Row>
-            <Col className="col-11">
+            <Col>
+              <ContactForm></ContactForm>
 
             </Col>
           </Row>
