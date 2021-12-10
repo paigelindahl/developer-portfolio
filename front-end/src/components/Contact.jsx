@@ -18,6 +18,9 @@ export default function Contact(props) {
               <div className="mb-5">
                 <h1 className="title"><span className="underline--magical">Contact</span></h1>
               </div>
+              <div>
+                <p className="white contact-text">I would love to hear from you about future opportunities. </p>
+              </div>
             </Col>
           </Row>
           <Row>

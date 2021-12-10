@@ -32,7 +32,7 @@ router.post("/contact", (req, res) => {
   const email = req.body.email;
   const message = req.body.message;
   const mail = {
-    from: name,
+    from: 'Employment',
     to: `${process.env.EMAIL}`,
     subject: "Contact Form Submission",
     html: `<p>Name: ${name}</p>
@@ -43,7 +43,7 @@ router.post("/contact", (req, res) => {
     if (error) {
       res.json({ status: "ERROR" });
     } else {
-      res.json({ status: "Message Sent" });
+      res.json({ status: "Message Sent. We'll get back to you soon. Thank you!" });
     }
   });
 });

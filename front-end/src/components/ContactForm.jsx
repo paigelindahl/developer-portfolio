@@ -33,15 +33,15 @@ const ContactForm = () => {
         <Row>
           <Col className="col-12 col-lg-8">
             <div className="contact-input">
-              <label htmlFor="name">Name:</label>
+              {/* <label htmlFor="name">Name:</label> */}
               <input type="text" id="name" placeholder="Name" required />
             </div>
             <div className="contact-input">
-              <label htmlFor="email">Email:</label>
+              {/* <label htmlFor="email">Email:</label> */}
               <input type="email" id="email" placeholder="Email" required />
             </div>
             <div className="contact-input">
-              <label htmlFor="message">Message:</label>
+              {/* <label htmlFor="message">Message:</label> */}
               <textarea id="message" placeholder="Message" required />
             </div>
             <button className="btn btn-one" type="submit"><span>{status}</span></button>
