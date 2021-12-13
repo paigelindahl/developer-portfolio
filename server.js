@@ -48,8 +48,8 @@ router.post("/contact", (req, res) => {
   });
 });
 
-app.use(express.static(path.join(__dirname, '/front-end/build')));
+app.use(express.static(path.join(__dirname, 'build')));
 // Handle React routing, return all requests to React app
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '/front-end/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
