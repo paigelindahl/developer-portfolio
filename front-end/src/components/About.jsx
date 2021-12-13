@@ -33,7 +33,7 @@ export default function About(props) {
               <Col className="col-11 col-md-5 mx-auto">
                 <div>
                   <p><span className="turquoise bold">Languages:</span> Javascript, HTML, CSS, Ruby</p>
-                  <p><span className="turquoise bold">Frameworks, Libraries and Environments:</span> NodeJS, ReactJS, AJAX, Express, EJS, jQuery, Bootstrap, SASS</p>
+                  <p><span className="turquoise bold">Frameworks, Libraries and Environments:</span> NodeJS, ReactJS, AJAX, Express, EJS, jQuery, Bootstrap, SASS, SCSS</p>
                   <p><span className="turquoise bold">Systems, Databases:</span> SQL, Git</p>
                   <p><span className="turquoise bold">Testing:</span> Jest, Cyprus, Mocha, Chai</p>
                   <p><span className="turquoise bold">Education:</span></p>
