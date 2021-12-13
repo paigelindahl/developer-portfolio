@@ -47,3 +47,9 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+app.use(express.static(path.join(__dirname, '/front-end/build')));
+// Handle React routing, return all requests to React app
+App.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, '/front-end/build', 'index.html'));
+});
