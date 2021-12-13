@@ -10,7 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+
+
+const port = process.env.PORT || 8080;
 
 const contactEmail = nodemailer.createTransport({
   service: 'hotmail',
@@ -54,3 +56,5 @@ app.use(express.static(path.join(__dirname, '/front-end/build')));
 app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, '/front-end/build', 'index.html'));
 });
+
+app.listen(port, () => console.log(`Server Running on port ${port}`));
