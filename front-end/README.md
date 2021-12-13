@@ -1,3 +1,15 @@
+# Paige's Portfolio
+A single page application built with React with a Node.js backend highlighting some of my personal projects. 
+
+The project can be viewed on heroku [here](https://paiges-portfolio.herokuapp.com/)
+
+![GIF of portfolio](https://github.com/paigelindahl/developer-portfolio/blob/master/docs/Paiges-portfolio.gif?raw=true)
+![Homepage photo](https://github.com/paigelindahl/developer-portfolio/blob/master/docs/homepage.png?raw=true)
+![About page photo](https://github.com/paigelindahl/developer-portfolio/blob/master/docs/about.png?raw=true)
+![Projects page photo](https://github.com/paigelindahl/developer-portfolio/blob/master/docs/projects.png?raw=true)
+![Contact page](https://github.com/paigelindahl/developer-portfolio/blob/master/docs/contact.png?raw=true)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
