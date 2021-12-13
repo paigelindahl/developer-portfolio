@@ -1,5 +1,5 @@
 # Paige's Portfolio
-A single page application built with React with a Node.js backend highlighting some of my personal projects. 
+A single page application built with React and a Node.js backend, highlighting some of my personal projects. 
 
 The project can be viewed on heroku [here](https://paiges-portfolio.herokuapp.com/)
 
