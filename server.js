@@ -15,7 +15,7 @@ app.use("/", router);
 const port = process.env.PORT || 8080;
 
 const contactEmail = nodemailer.createTransport({
-  service: 'hotmail',
+  service: 'gmail',
   auth: {
     user: `${process.env.EMAIL}`,
     pass: `${process.env.PASS}`,
