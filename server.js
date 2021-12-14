@@ -30,7 +30,9 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", async (req, res) => {
+console.log('contact emaillll', contactEmail)
+
+router.post("/contact", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;

@@ -12,13 +12,11 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus("Sending...");
     const { name, email, message } = e.target.elements;
-    console.log('this is all of them', name, email, message)
     let details = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
-    console.log('this is details', details);
     let response = await fetch("/contact", {
       method: "POST",
       headers: {
@@ -28,7 +26,6 @@ const ContactForm = () => {
     });
     setStatus("Submit");
     let result = await response.json();
-    console.log('this is result', result)
     alert(result.status);
     $("#contact-form")[0].reset();
   };
@@ -38,15 +35,12 @@ const ContactForm = () => {
         <Row>
           <Col className="col-12 col-lg-8">
             <div className="contact-input">
-              {/* <label htmlFor="name">Name:</label> */}
               <input type="text" id="name" placeholder="Name" required />
             </div>
             <div className="contact-input">
-              {/* <label htmlFor="email">Email:</label> */}
               <input type="email" id="email" placeholder="Email" required />
             </div>
             <div className="contact-input">
-              {/* <label htmlFor="message">Message:</label> */}
               <textarea id="message" placeholder="Message" required />
             </div>
             <button className="btn btn-one" type="submit"><span>{status}</span></button>
