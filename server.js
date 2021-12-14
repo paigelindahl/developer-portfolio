@@ -44,10 +44,10 @@ router.post("/contact", (req, res) => {
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,
   };
-  console.log('contact emaillll', contactEmail)
   contactEmail.sendMail(mail, (error) => {
     if (error) {
       res.json({ status: "ERROR" });
+      console.log('this is error', error);
     } else {
       res.json({ status: "Message Sent. We'll get back to you soon. Thank you!" });
     }
