@@ -34,9 +34,8 @@ router.post("/contact", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message;
-  console.log('this is them', name, email, message);
   const mail = {
-    from: 'Employment',
+    from: "Employment Opp",
     to: `${process.env.EMAIL}`,
     subject: "Contact Form Submission",
     html: `<p>Name: ${name}</p>
@@ -44,6 +43,7 @@ router.post("/contact", (req, res) => {
            <p>Message: ${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
+    console.log('this is mail', mail);
     if (error) {
       res.json({ status: "ERROR" });
     } else {
