@@ -4,6 +4,8 @@ import Col from 'react-bootstrap/Col';
 import Fade from 'react-reveal/Fade';
 import $ from 'jquery';
 
+const port = process.env.PORT || 8080;
+
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
@@ -15,7 +17,7 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch(`http://localhost:${port}/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
