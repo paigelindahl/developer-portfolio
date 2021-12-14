@@ -30,7 +30,7 @@ contactEmail.verify((error) => {
   }
 });
 
-console.log('contact emaillll', contactEmail)
+
 
 router.post("/contact", (req, res) => {
   const name = req.body.name;
@@ -44,6 +44,7 @@ router.post("/contact", (req, res) => {
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,
   };
+  console.log('contact emaillll', contactEmail)
   contactEmail.sendMail(mail, (error) => {
     if (error) {
       res.json({ status: "ERROR" });
