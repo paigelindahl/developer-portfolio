@@ -43,7 +43,6 @@ router.post("/contact", (req, res) => {
            <p>Message: ${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
-    console.log('this is mail', mail);
     if (error) {
       res.json({ status: "ERROR" });
     } else {

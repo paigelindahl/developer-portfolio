@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Fade from 'react-reveal/Fade';
 import $ from 'jquery';
 
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -12,11 +12,13 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus("Sending...");
     const { name, email, message } = e.target.elements;
+    console.log('this is all of them', name, email, message)
     let details = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
+    console.log('this is details', details);
     let response = await fetch("/contact", {
       method: "POST",
       headers: {
@@ -26,6 +28,7 @@ const ContactForm = () => {
     });
     setStatus("Submit");
     let result = await response.json();
+    console.log('this is result', result)
     alert(result.status);
     $("#contact-form")[0].reset();
   };
